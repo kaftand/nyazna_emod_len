@@ -1433,6 +1433,7 @@
                 "Target_Demographic": "ExplicitAgeRangesAndGender",
                 "Target_Disease_State": "HIV_Negative",
                 "Target_Gender": "Female",
+                "Target_Gender__KP_PrEP_VOICE_0":"Marker",
                 "Targeting_Config": {
                     "class": "TargetingLogic",
                     "Logic": [
