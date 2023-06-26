@@ -213,7 +213,7 @@
         "Report_HIV_ByAgeAndGender_Has_Intervention_With_Name": "",
         "Report_HIV_ByAgeAndGender_Start_Year": 2000,
         "Report_HIV_ByAgeAndGender_Stop_Year": 2072,
-        "Report_HIV_ByAgeAndGender_Stratify_Infected_By_CD4": 0,
+        "Report_HIV_ByAgeAndGender_Stratify_Infected_By_CD4": 1,
         "Report_HIV_Event_Channels_List": [],
         "Report_HIV_Infection": 0,
         "Report_HIV_Mortality": 0,
