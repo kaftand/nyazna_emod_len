@@ -19,6 +19,12 @@
                     "Transitions": []
                 },
                 {
+                    "Property": "VOICE6",
+                    "Values": ["FALSE", "TRUE"],
+                    "Initial_Distribution": [ 1, 0],
+                    "Transitions": []
+                },
+                {
                     "Property": "PrEP_Eligible",
                     "Values": ["False", "True"],
                     "Initial_Distribution": [ 0, 1],
@@ -120,6 +126,12 @@
                 {
                     "Property": "Known_Positive",
                     "Values": ["False", "True"],
+                    "Initial_Distribution": [ 1, 0],
+                    "Transitions": []
+                },
+                {
+                    "Property": "VOICE6",
+                    "Values": ["FALSE", "TRUE"],
                     "Initial_Distribution": [ 1, 0],
                     "Transitions": []
                 },
@@ -265,6 +277,12 @@
                     "Transitions": []
                 },
                 {
+                    "Property": "VOICE6",
+                    "Values": ["FALSE", "TRUE"],
+                    "Initial_Distribution": [ 1, 0],
+                    "Transitions": []
+                },
+                {
                     "Property": "PrEP_Eligible",
                     "Values": ["False", "True"],
                     "Initial_Distribution": [ 0, 1],
@@ -402,6 +420,12 @@
                 {
                     "Property": "Known_Positive",
                     "Values": ["False", "True"],
+                    "Initial_Distribution": [ 1, 0],
+                    "Transitions": []
+                },
+                {
+                    "Property": "VOICE6",
+                    "Values": ["FALSE", "TRUE"],
                     "Initial_Distribution": [ 1, 0],
                     "Transitions": []
                 },
@@ -547,6 +571,12 @@
                     "Transitions": []
                 },
                 {
+                    "Property": "VOICE6",
+                    "Values": ["FALSE", "TRUE"],
+                    "Initial_Distribution": [ 1, 0],
+                    "Transitions": []
+                },
+                {
                     "Property": "PrEP_Eligible",
                     "Values": ["False", "True"],
                     "Initial_Distribution": [ 0, 1],
@@ -684,6 +714,12 @@
                 {
                     "Property": "Known_Positive",
                     "Values": ["False", "True"],
+                    "Initial_Distribution": [ 1, 0],
+                    "Transitions": []
+                },
+                {
+                    "Property": "VOICE6",
+                    "Values": ["FALSE", "TRUE"],
                     "Initial_Distribution": [ 1, 0],
                     "Transitions": []
                 },

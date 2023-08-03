@@ -17,8 +17,9 @@ VOICE0NoMen100p,campaign_Nyanza_baseline_202301.json,"[0,0,0,0]","[0,0,0,0]","[0
 VOICE2PlusMaleClients,campaign_Nyanza_baseline_202301.json,"[0,0,0,0]","[0,1,1,0]","[0,0,0,0]","[0,0,0,0]","[0,1,1,0]","[0,1,1,0]","[0,0,0,0]",Female
 VOICE4PlusMaleClients,campaign_Nyanza_baseline_202301.json,"[0,0,0,0]","[0,0,0,0]","[0,1,1,0]","[0,0,0,0]","[0,1,1,0]","[0,1,1,0]","[0,0,0,0]",Female
 VOICE6PlusMaleClients,campaign_Nyanza_baseline_202301.json,"[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,1,1,0]","[0,1,1,0]","[0,1,1,0]","[0,0,0,0]",Female
-VOICE0PlusMen100p,campaign_Nyanza_baseline_202301.json,"[0,1,1,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,1,1,0]",Female
+VOICE0PlusMen100p,campaign_Nyanza_baseline_202301.json,"[0,1,1,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,1,1,0]","[0,0,0,0]","[0,1,1,0]",Female
 VOICE0PlusMaleClients100p,campaign_Nyanza_baseline_202301.json,"[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,1,1,0]","[0,0,0,0]","[0,1,1,0]",Female
-VOICE0PlusMen40p,campaign_Nyanza_baseline_202301.json,"[0,1,1,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,.4,.4,0]",Female
+VOICE0PlusMen40p,campaign_Nyanza_baseline_202301.json,"[0,1,1,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,1,1,0]","[0,0,0,0]","[0,.4,.4,0]",Female
 VOICE0PlusMaleClients40p,campaign_Nyanza_baseline_202301.json,"[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,1,1,0]","[0,0,0,0]","[0,.4,.4,0]",Female
 FSW_PlusMen,campaign_Nyanza_baseline_202301.json,"[0,1,1,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,1,1,0]","[0,1,1,0]","[0,0,0,0]",Female
+JustMen,campaign_Nyanza_baseline_202301.json,"[0,1,1,0]","[0,0,0,0]","[0,0,0,0]","[0,0,0,0]","[0,1,1,0]","[0,0,0,0]","[0,0,0,0]",Female
