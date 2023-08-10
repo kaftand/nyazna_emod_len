@@ -2,2026 +2,2440 @@
     "Campaign_Name": "Baseline campaign for Nyanza Region",
     "Events": [
         
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
+      
+    {
+        "BEGIN": "PREP Background",
+        "Event_Coordinator_Config": {
+            "Distributions": [
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2017,
+                    "Num_Targeted_Females": [
+                        655
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
                         },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 25,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                        {
+                            "Risk": "MEDIUM"
+                        }
+                    ],
+                    "Start_Year": 2016,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "MARITAL",
-                                "Num_Partners": 1,
-                                "More_Or_Less": "LESS"
-                            },
-                            {
-                                "class": "HasRelationship",
-                                "Is_Equal_To": 1,
-                                "With_Partner_Who": {
-                                    "class": "HasHadMultiplePartnersInLastNumMonths",
-                                    "Is_Equal_To": 1,
-                                    "Num_Months_Type": "THREE_MONTHS"
-                                }
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_6_OnOff": "<-- MARKER"
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
                 },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2018,
+                    "Num_Targeted_Females": [
+                        4376
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
                         },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 25,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                        {
+                            "Risk": "MEDIUM"
+                        }
+                    ],
+                    "Start_Year": 2017,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "MARITAL",
-                                "Num_Partners": 1,
-                                "More_Or_Less": "LESS"
-                            },
-                            {
-                                "class": "HasIP",
-                                "Is_Equal_To": 1,
-                                "IP_Key_Value": "Risk:MEDIUM"
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_6_OnOff": "<-- MARKER"
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
                 },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2019,
+                    "Num_Targeted_Females": [
+                        13208
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
                         },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 25,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                        {
+                            "Risk": "MEDIUM"
+                        }
+                    ],
+                    "Start_Year": 2018,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasRelationship",
-                                "Is_Equal_To": 1,
-                                "With_Partner_Who": {
-                                    "class": "HasHadMultiplePartnersInLastNumMonths",
-                                    "Is_Equal_To": 1,
-                                    "Num_Months_Type": "THREE_MONTHS"
-                                }
-                            },
-                            {
-                                "class": "HasIP",
-                                "Is_Equal_To": 1,
-                                "IP_Key_Value": "Risk:MEDIUM"
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_6_OnOff": "<-- MARKER"
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
                 },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2020,
+                    "Num_Targeted_Females": [
+                        3370
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
                         },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 50,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                        {
+                            "Risk": "MEDIUM"
+                        }
+                    ],
+                    "Start_Year": 2019,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "MARITAL",
-                                "Num_Partners": 1,
-                                "More_Or_Less": "LESS"
-                            },
-                            {
-                                "class": "HasRelationship",
-                                "Is_Equal_To": 1,
-                                "With_Partner_Who": {
-                                    "class": "HasHadMultiplePartnersInLastNumMonths",
-                                    "Is_Equal_To": 1,
-                                    "Num_Months_Type": "THREE_MONTHS"
-                                }
-                            },
-                            {
-                                "class": "HasIP",
-                                "Is_Equal_To": 1,
-                                "IP_Key_Value": "Risk:MEDIUM"
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_6_OnOff": "<-- MARKER"
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
                 },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2021,
+                    "Num_Targeted_Females": [
+                        11543
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
                         },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 25,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                        {
+                            "Risk": "MEDIUM"
+                        }
+                    ],
+                    "Start_Year": 2020,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "MARITAL",
-                                "Num_Partners": 1,
-                                "More_Or_Less": "LESS"
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
                 },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2022,
+                    "Num_Targeted_Females": [
+                        18007
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
                         },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 25,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                        {
+                            "Risk": "MEDIUM"
+                        }
+                    ],
+                    "Start_Year": 2021,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasRelationship",
-                                "Is_Equal_To": 1,
-                                "With_Partner_Who": {
-                                    "class": "HasHadMultiplePartnersInLastNumMonths",
-                                    "Is_Equal_To": 1,
-                                    "Num_Months_Type": "THREE_MONTHS"
-                                }
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
                 },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2023,
+                    "Num_Targeted_Females": [
+                        68220
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
                         },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 50,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                        {
+                            "Risk": "MEDIUM"
+                        }
+                    ],
+                    "Start_Year": 2022,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "MARITAL",
-                                "Num_Partners": 1,
-                                "More_Or_Less": "LESS"
-                            },
-                            {
-                                "class": "HasRelationship",
-                                "Is_Equal_To": 1,
-                                "With_Partner_Who": {
-                                    "class": "HasHadMultiplePartnersInLastNumMonths",
-                                    "Is_Equal_To": 1,
-                                    "Num_Months_Type": "THREE_MONTHS"
-                                }
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
+                },
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
                     ],
-                    "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
-                },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 50,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                    "End_Year": 2024,
+                    "Num_Targeted_Females": [
+                        51165
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "VOICE6": "TRUE"
+                        }
+                    ],
+                    "Start_Year": 2023,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "MARITAL",
-                                "Num_Partners": 1,
-                                "More_Or_Less": "LESS"
-                            },
-                            {
-                                "class": "HasIP",
-                                "Is_Equal_To": 1,
-                                "IP_Key_Value": "Risk:MEDIUM"
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
+                },
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
                     ],
-                    "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
-                },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 25,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                    "End_Year": 2025,
+                    "Num_Targeted_Females": [
+                        68220
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "VOICE6": "TRUE"
+                        }
+                    ],
+                    "Start_Year": 2024,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasIP",
-                                "Is_Equal_To": 1,
-                                "IP_Key_Value": "Risk:MEDIUM"
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
+                },
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
                     ],
-                    "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
-                },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 50,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                    "End_Year": 2026,
+                    "Num_Targeted_Females": [
+                        85275
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "VOICE6": "TRUE"
+                        }
+                    ],
+                    "Start_Year": 2025,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasRelationship",
-                                "Is_Equal_To": 1,
-                                "With_Partner_Who": {
-                                    "class": "HasHadMultiplePartnersInLastNumMonths",
-                                    "Is_Equal_To": 1,
-                                    "Num_Months_Type": "THREE_MONTHS"
-                                }
-                            },
-                            {
-                                "class": "HasIP",
-                                "Is_Equal_To": 1,
-                                "IP_Key_Value": "Risk:MEDIUM"
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
+                },
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
                     ],
-                    "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
-                },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 50,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
+                    "End_Year": 2065,
+                    "Num_Targeted_Females": [
+                        3990893
+                    ],
+                    "Num_Targeted_Males": [
+                        0
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "VOICE6": "TRUE"
+                        }
+                    ],
+                    "Start_Year": 2026,
+                    "Target_Disease_State": [
                         [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasIP",
-                                "Is_Equal_To": 1,
-                                "IP_Key_Value": "Risk:MEDIUM"
-                            }
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
                         ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
                     ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_2_OnOff": "<-- MARKER"
-                },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
+                }
+            ],
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "Oral_PrEP",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            90
+                        ],
+                        "Values": [
+                            1,
+                            1
+                        ]
                     },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.75,
+                    "class": "WaningEffectMapLinear"
                 },
-                "Target_Age_Max": 50,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
-                        [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasRelationship",
-                                "Is_Equal_To": 1,
-                                "With_Partner_Who": {
-                                    "class": "HasHadMultiplePartnersInLastNumMonths",
-                                    "Is_Equal_To": 1,
-                                    "Num_Months_Type": "THREE_MONTHS"
-                                }
-                            }
-                        ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
-                    ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_2_OnOff": "<-- MARKER"
-                },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
+                "Waning_Config__KP_PrEP_HIGH_Waning": "<-- MARKER",
+                "class": "ControlledVaccine"
             },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
+            "class": "NChooserEventCoordinatorHIV"
         },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
+        "Event_Name": "NChooser to implement specified number of PrEP uptake",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2015,
+        "class": "CampaignEvent",
+        "END": "PREP Background"
+    },
+    {
+        "BEGIN": "PREP Background",
+        "Event_Coordinator_Config": {
+            "Distributions": [
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2024,
+                    "Num_Targeted_Females": [
+                        0
+                    ],
+                    "Num_Targeted_Males": [
+                        51165
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
+                        }
+                    ],
+                    "Start_Year": 2023,
+                    "Target_Disease_State": [
+                        [
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
+                        ]
+                    ],
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
+                },
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2025,
+                    "Num_Targeted_Females": [
+                        0
+                    ],
+                    "Num_Targeted_Males": [
+                        68220
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
+                        }
+                    ],
+                    "Start_Year": 2024,
+                    "Target_Disease_State": [
+                        [
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
+                        ]
+                    ],
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
+                },
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2026,
+                    "Num_Targeted_Females": [
+                        0
+                    ],
+                    "Num_Targeted_Males": [
+                        85275
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
+                        }
+                    ],
+                    "Start_Year": 2025,
+                    "Target_Disease_State": [
+                        [
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
+                        ]
+                    ],
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
+                },
+                {
+                    "Age_Ranges_Years": [
+                        {
+                            "Max": 65,
+                            "Min": 15
+                        }
+                    ],
+                    "End_Year": 2065,
+                    "Num_Targeted_Females": [
+                        0
+                    ],
+                    "Num_Targeted_Males": [
+                        3990893
+                    ],
+                    "Property_Restrictions_Within_Node": [
+                        {
+                            "Risk": "HIGH"
+                        }
+                    ],
+                    "Start_Year": 2026,
+                    "Target_Disease_State": [
+                        [
+                            "HIV_Negative",
+                            "Not_Have_Intervention"
+                        ]
+                    ],
+                    "Target_Disease_State_Has_Intervention_Name": "PrEP"
+                }
+            ],
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "Oral_PrEP",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            90
+                        ],
+                        "Values": [
+                            1,
+                            1
+                        ]
                     },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.75,
+                    "class": "WaningEffectMapLinear"
                 },
-                "Target_Age_Max": 50,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
-                        [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "MARITAL",
-                                "Num_Partners": 1,
-                                "More_Or_Less": "LESS"
-                            }
-                        ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
-                    ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_2_OnOff": "<-- MARKER"
-                },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
+                "Waning_Config__KP_PrEP_HIGH_Waning": "<-- MARKER",
+                "class": "ControlledVaccine"
             },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
+            "class": "NChooserEventCoordinatorHIV"
         },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 25,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
-                        [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            }
-                        ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
-                    ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_2_OnOff": "<-- MARKER"
-                },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
+        "Event_Name": "NChooser to implement specified number of PrEP uptake",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
         },
-        {
-            "BEGIN": "PrEP INTERVENTION",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 50,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Female",
-                "Target_Gender__KP_PrEP_VOICE_0":"Marker",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
-                        [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "Oral_PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
-                                "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 0,
-                                "More_Or_Less": "MORE"
-                            }
-                        ]
-                    ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
-                    ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_VOICE_0_OnOff": "<-- MARKER"
-                },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear"
-        },
-            
-        {
-            "BEGIN": "PrEP INTERVENTION FSW",
-            "Event_Coordinator_Config": {
+        "Start_Year": 2015,
+        "class": "CampaignEvent",
+        "END": "PREP Background"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
             "End_Year": 2099,
             "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                            0,
-                            180,
-                            181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger":""
-                },
-                "Targeting_Config": {
-                "class" : "TargetingLogic",
-                "Logic" : [
+                "class": "PropertyValueChanger",
+                "Target_Property_Key": "VOICE6",
+                "Target_Property_Value": "TRUE",
+                "Revert": 59.8333333333334
+            },
+            "Target_Age_Max": 25,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
                     [
                         {
                             "class": "HasIP",
-                            "Is_Equal_To": 1,
-                            "IP_Key_Value": "Risk:HIGH"
+                            "Is_Equal_To": 0,
+                            "IP_Key_Value": "VOICE6:TRUE"
                         },
                         {
-                            "class": "HasIntervention",
-                            "Is_Equal_To": 0,
-                            "Intervention_Name": "PrEP"
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "MARITAL",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "LESS"
+                        },
+                        {
+                            "class": "HasRelationship",
+                            "Is_Equal_To": 1,
+                            "With_Partner_Who": {
+                                "class": "HasHadMultiplePartnersInLastNumMonths",
+                                "Is_Equal_To": 1,
+                                "Num_Months_Type": "THREE_MONTHS"
+                            }
                         }
                     ]
                 ]
-                },
-                "Target_Age_Max": 65,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitGender",
-                "Target_Gender": "Female",
-                "Target_Disease_State": "HIV_Negative",
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
-                    ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_FSW_OnOff": "<-- MARKER"
-
-                },
+            },
+            "Demographic_Coverage": 1,
+            "Number_Repetitions": -1,
+            "Timesteps_Between_Repetitions": 2,
             "Update_Period": 7.01923076923,
-            "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-            "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear",
-            "END": "PrEP INTERVENTION"
+            "class": "StandardInterventionDistributionEventCoordinator"
         },
-        {
-            "BEGIN": "PrEP INTERVENTION Clients of FSW",
-            "Event_Coordinator_Config": {
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2010,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
             "End_Year": 2099,
             "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                            0,
-                            180,
-                            181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger":""
-                },
-                "Targeting_Config": {
-                "class" : "TargetingLogic",
-                "Logic" : [
+                "class": "PropertyValueChanger",
+                "Target_Property_Key": "VOICE6",
+                "Target_Property_Value": "TRUE",
+                "Revert": 59.8333333333334
+            },
+            "Target_Age_Max": 25,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
                     [
                         {
                             "class": "HasIP",
-                            "Is_Equal_To": 1,
-                            "IP_Key_Value": "Risk:HIGH"
+                            "Is_Equal_To": 0,
+                            "IP_Key_Value": "VOICE6:TRUE"
                         },
                         {
-                            "class": "HasIntervention",
-                            "Is_Equal_To": 0,
-                            "Intervention_Name": "PrEP"
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "MARITAL",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "LESS"
+                        },
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:MEDIUM"
                         }
                     ]
                 ]
-                },
-                "Target_Age_Max": 65,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitGender",
-                "Target_Gender": "Male",
-                "Target_Disease_State": "HIV_Negative",
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
-                    ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_FSW_Clients": "<-- MARKER"
-                },
+            },
+            "Demographic_Coverage": 1,
+            "Number_Repetitions": -1,
+            "Timesteps_Between_Repetitions": 2,
             "Update_Period": 7.01923076923,
-            "class": "ReferenceTrackingEventCoordinatorHIV"
-            },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
+            "class": "StandardInterventionDistributionEventCoordinator"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
             "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear",
-            "END": "PrEP INTERVENTION"
         },
-        {
-            "BEGIN": "PrEP INTERVENTION Men 2p partners",
-            "Event_Coordinator_Config": {
-                "End_Year": 2099,
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "PrEP",
-                    "New_Property_Value": "OnDrug:YES",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                180,
-                                181
-                            ],
-                            "Values": [
-                                1,
-                                1,
-                                1
-                            ]
+        "Start_Year": 2010,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "class": "PropertyValueChanger",
+                "Target_Property_Key": "VOICE6",
+                "Target_Property_Value": "TRUE",
+                "Revert": 59.8333333333334
+            },
+            "Target_Age_Max": 25,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 0,
+                            "IP_Key_Value": "VOICE6:TRUE"
                         },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.95,
-                        "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_DPP_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine",
-                    "Distributed_Event_Trigger": "Received_PrEP",
-                    "Expired_Event_Trigger": ""
-                },
-                "Target_Age_Max": 50,
-                "Target_Age_Min": 15,
-                "Target_Demographic": "ExplicitAgeRangesAndGender",
-                "Target_Disease_State": "HIV_Negative",
-                "Target_Gender": "Male",
-                "Targeting_Config": {
-                    "class": "TargetingLogic",
-                    "Logic": [
-                        [
-                            {
-                                "class": "HasIntervention",
-                                "Is_Equal_To": 0,
-                                "Intervention_Name": "PrEP"
-                            },
-                            {
-                                "class": "HasMoreOrLessThanNumPartners",
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasRelationship",
+                            "Is_Equal_To": 1,
+                            "With_Partner_Who": {
+                                "class": "HasHadMultiplePartnersInLastNumMonths",
                                 "Is_Equal_To": 1,
-                                "Of_Relationship_Type": "NA",
-                                "Num_Partners": 1,
-                                "More_Or_Less": "MORE"
+                                "Num_Months_Type": "THREE_MONTHS"
                             }
-                        ]
+                        },
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:MEDIUM"
+                        }
                     ]
-                },
-                "Time_Value_Map": {
-                    "Times": [
-                        2025,
-                        2035,
-                        2045,
-                        2046
-                    ],
-                    "Values": [
-                        0.0,
-                        1.0,
-                        1.0,
-                        0.0
-                    ],
-                    "Values__KP_PrEP_MEN_Mult_Partners_OnOff": "<-- MARKER"
-                },
-                "Update_Period": 7.01923076923,
-                "class": "ReferenceTrackingEventCoordinatorHIV"
+                ]
             },
-            "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
-            "Event_Name": "DPP Reference Tracking",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2025,
-            "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
-            "class": "CampaignEventByYear",
-            "END":"LA PrEP"
+            "Demographic_Coverage": 1,
+            "Number_Repetitions": -1,
+            "Timesteps_Between_Repetitions": 2,
+            "Update_Period": 7.01923076923,
+            "class": "StandardInterventionDistributionEventCoordinator"
         },
-        {
-            "BEGIN": "PREP Background",
-            "Event_Coordinator_Config": {
-                "Distributions": [
-                    {
-                        "Age_Ranges_Years": [
-                            {
-                                "Max": 65,
-                                "Min": 15
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2010,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "class": "PropertyValueChanger",
+                "Target_Property_Key": "VOICE6",
+                "Target_Property_Value": "TRUE",
+                "Revert": 59.8333333333334
+            },
+            "Target_Age_Max": 50,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 0,
+                            "IP_Key_Value": "VOICE6:TRUE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "MARITAL",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "LESS"
+                        },
+                        {
+                            "class": "HasRelationship",
+                            "Is_Equal_To": 1,
+                            "With_Partner_Who": {
+                                "class": "HasHadMultiplePartnersInLastNumMonths",
+                                "Is_Equal_To": 1,
+                                "Num_Months_Type": "THREE_MONTHS"
                             }
+                        },
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:MEDIUM"
+                        }
+                    ]
+                ]
+            },
+            "Demographic_Coverage": 1,
+            "Number_Repetitions": -1,
+            "Timesteps_Between_Repetitions": 2,
+            "Update_Period": 7.01923076923,
+            "class": "StandardInterventionDistributionEventCoordinator"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2010,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
                         ],
-                        "End_Year": 2017,
-                        "Num_Targeted_Females": [
-                            655
-                        ],
-                        "Num_Targeted_Males": [
-                            0
-                        ],
-                        "Property_Restrictions_Within_Node": [
-                            {
-                                "Risk": "HIGH"
-                            },
-                            {
-                                "Risk": "MEDIUM"
-                            }
-                        ],
-                        "Start_Year": 2016,
-                        "Target_Disease_State": [
-                            [
-                                "HIV_Negative",
-                                "Not_Have_Intervention"
-                            ]
-                        ],
-                        "Target_Disease_State_Has_Intervention_Name": "PrEP"
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
                     },
-                    {
-                        "Age_Ranges_Years": [
-                            {
-                                "Max": 65,
-                                "Min": 15
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 25,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "MARITAL",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "LESS"
+                        },
+                        {
+                            "class": "HasRelationship",
+                            "Is_Equal_To": 1,
+                            "With_Partner_Who": {
+                                "class": "HasHadMultiplePartnersInLastNumMonths",
+                                "Is_Equal_To": 1,
+                                "Num_Months_Type": "THREE_MONTHS"
                             }
-                        ],
-                        "End_Year": 2018,
-                        "Num_Targeted_Females": [
-                            4376
-                        ],
-                        "Num_Targeted_Males": [
-                            0
-                        ],
-                        "Property_Restrictions_Within_Node": [
-                            {
-                                "Risk": "HIGH"
-                            },
-                            {
-                                "Risk": "MEDIUM"
-                            }
-                        ],
-                        "Start_Year": 2017,
-                        "Target_Disease_State": [
-                            [
-                                "HIV_Negative",
-                                "Not_Have_Intervention"
-                            ]
-                        ],
-                        "Target_Disease_State_Has_Intervention_Name": "PrEP"
-                    },
-                    {
-                        "Age_Ranges_Years": [
-                            {
-                                "Max": 65,
-                                "Min": 15
-                            }
-                        ],
-                        "End_Year": 2019,
-                        "Num_Targeted_Females": [
-                            13208
-                        ],
-                        "Num_Targeted_Males": [
-                            0
-                        ],
-                        "Property_Restrictions_Within_Node": [
-                            {
-                                "Risk": "HIGH"
-                            },
-                            {
-                                "Risk": "MEDIUM"
-                            }
-                        ],
-                        "Start_Year": 2018,
-                        "Target_Disease_State": [
-                            [
-                                "HIV_Negative",
-                                "Not_Have_Intervention"
-                            ]
-                        ],
-                        "Target_Disease_State_Has_Intervention_Name": "PrEP"
-                    },
-                    {
-                        "Age_Ranges_Years": [
-                            {
-                                "Max": 65,
-                                "Min": 15
-                            }
-                        ],
-                        "End_Year": 2020,
-                        "Num_Targeted_Females": [
-                            3370
-                        ],
-                        "Num_Targeted_Males": [
-                            0
-                        ],
-                        "Property_Restrictions_Within_Node": [
-                            {
-                                "Risk": "HIGH"
-                            },
-                            {
-                                "Risk": "MEDIUM"
-                            }
-                        ],
-                        "Start_Year": 2019,
-                        "Target_Disease_State": [
-                            [
-                                "HIV_Negative",
-                                "Not_Have_Intervention"
-                            ]
-                        ],
-                        "Target_Disease_State_Has_Intervention_Name": "PrEP"
-                    },
-                    {
-                        "Age_Ranges_Years": [
-                            {
-                                "Max": 65,
-                                "Min": 15
-                            }
-                        ],
-                        "End_Year": 2021,
-                        "Num_Targeted_Females": [
-                            11543
-                        ],
-                        "Num_Targeted_Males": [
-                            0
-                        ],
-                        "Property_Restrictions_Within_Node": [
-                            {
-                                "Risk": "HIGH"
-                            },
-                            {
-                                "Risk": "MEDIUM"
-                            }
-                        ],
-                        "Start_Year": 2020,
-                        "Target_Disease_State": [
-                            [
-                                "HIV_Negative",
-                                "Not_Have_Intervention"
-                            ]
-                        ],
-                        "Target_Disease_State_Has_Intervention_Name": "PrEP"
-                    },
-                    {
-                        "Age_Ranges_Years": [
-                            {
-                                "Max": 65,
-                                "Min": 15
-                            }
-                        ],
-                        "End_Year": 2022,
-                        "Num_Targeted_Females": [
-                            18007
-                        ],
-                        "Num_Targeted_Males": [
-                            0
-                        ],
-                        "Property_Restrictions_Within_Node": [
-                            {
-                                "Risk": "HIGH"
-                            },
-                            {
-                                "Risk": "MEDIUM"
-                            }
-                        ],
-                        "Start_Year": 2021,
-                        "Target_Disease_State": [
-                            [
-                                "HIV_Negative",
-                                "Not_Have_Intervention"
-                            ]
-                        ],
-                        "Target_Disease_State_Has_Intervention_Name": "PrEP"
-                    },
-                    {
-                        "Age_Ranges_Years": [
-                            {
-                                "Max": 65,
-                                "Min": 15
-                            }
-                        ],
-                        "End_Year": 2023,
-                        "Num_Targeted_Females": [
-                            68220
-                        ],
-                        "Num_Targeted_Males": [
-                            0
-                        ],
-                        "Property_Restrictions_Within_Node": [
-                            {
-                                "Risk": "HIGH"
-                            },
-                            {
-                                "Risk": "MEDIUM"
-                            }
-                        ],
-                        "Start_Year": 2022,
-                        "Target_Disease_State": [
-                            [
-                                "HIV_Negative",
-                                "Not_Have_Intervention"
-                            ]
-                        ],
-                        "Target_Disease_State_Has_Intervention_Name": "PrEP"
-                    },
-                    {
-                        "Age_Ranges_Years": [
-                            {
-                                "Max": 65,
-                                "Min": 15
-                            }
-                        ],
-                        "End_Year": 2065,
-                        "Num_Targeted_Females": [
-                            2865256
-                        ],
-                        "Num_Targeted_Males": [
-                            0
-                        ],
-                        "Property_Restrictions_Within_Node": [
-                            {
-                                "Risk": "HIGH"
-                            },
-                            {
-                                "Risk": "MEDIUM"
-                            }
-                        ],
-                        "Start_Year": 2023,
-                        "Target_Disease_State": [
-                            [
-                                "HIV_Negative",
-                                "Not_Have_Intervention"
-                            ]
-                        ],
-                        "Target_Disease_State_Has_Intervention_Name": "PrEP"
-                    }
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
                 ],
-                "Intervention_Config": {
-                    "Cost_To_Consumer": 1.0,
-                    "Intervention_Name": "Oral_PrEP",
-                    "Vaccine_Take": 1,
-                    "Vaccine_Type": "AcquisitionBlocking",
-                    "Waning_Config": {
-                        "Durability_Map": {
-                            "Times": [
-                                0,
-                                90
-                            ],
-                            "Values": [
-                                1,
-                                1
-                            ]
-                        },
-                        "Expire_At_Durability_Map_End": 1,
-                        "Initial_Effect": 0.75,
-                        "class": "WaningEffectMapLinear"
-                    },
-                    "Waning_Config__KP_PrEP_HIGH_Waning": "<-- MARKER",
-                    "class": "ControlledVaccine"
-                },
-                "class": "NChooserEventCoordinatorHIV"
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_6_OnOff": "<-- MARKER"
             },
-            "Event_Name": "NChooser to implement specified number of PrEP uptake",
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2015,
-            "class": "CampaignEvent",
-            "END": "PREP Background"
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
         },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 25,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "MARITAL",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "LESS"
+                        },
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:MEDIUM"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_6_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 25,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasRelationship",
+                            "Is_Equal_To": 1,
+                            "With_Partner_Who": {
+                                "class": "HasHadMultiplePartnersInLastNumMonths",
+                                "Is_Equal_To": 1,
+                                "Num_Months_Type": "THREE_MONTHS"
+                            }
+                        },
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:MEDIUM"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_6_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 50,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "MARITAL",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "LESS"
+                        },
+                        {
+                            "class": "HasRelationship",
+                            "Is_Equal_To": 1,
+                            "With_Partner_Who": {
+                                "class": "HasHadMultiplePartnersInLastNumMonths",
+                                "Is_Equal_To": 1,
+                                "Num_Months_Type": "THREE_MONTHS"
+                            }
+                        },
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:MEDIUM"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_6_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 25,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "MARITAL",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "LESS"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 25,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasRelationship",
+                            "Is_Equal_To": 1,
+                            "With_Partner_Who": {
+                                "class": "HasHadMultiplePartnersInLastNumMonths",
+                                "Is_Equal_To": 1,
+                                "Num_Months_Type": "THREE_MONTHS"
+                            }
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 50,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "MARITAL",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "LESS"
+                        },
+                        {
+                            "class": "HasRelationship",
+                            "Is_Equal_To": 1,
+                            "With_Partner_Who": {
+                                "class": "HasHadMultiplePartnersInLastNumMonths",
+                                "Is_Equal_To": 1,
+                                "Num_Months_Type": "THREE_MONTHS"
+                            }
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 50,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "MARITAL",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "LESS"
+                        },
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:MEDIUM"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 25,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:MEDIUM"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 50,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasRelationship",
+                            "Is_Equal_To": 1,
+                            "With_Partner_Who": {
+                                "class": "HasHadMultiplePartnersInLastNumMonths",
+                                "Is_Equal_To": 1,
+                                "Num_Months_Type": "THREE_MONTHS"
+                            }
+                        },
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:MEDIUM"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_4_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 50,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:MEDIUM"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_2_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 50,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasRelationship",
+                            "Is_Equal_To": 1,
+                            "With_Partner_Who": {
+                                "class": "HasHadMultiplePartnersInLastNumMonths",
+                                "Is_Equal_To": 1,
+                                "Num_Months_Type": "THREE_MONTHS"
+                            }
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_2_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 50,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "MARITAL",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "LESS"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_2_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 25,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_2_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 50,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Female",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 0,
+                            "More_Or_Less": "MORE"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_VOICE_0_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2026,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION FSW",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:HIGH"
+                        },
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        }
+                    ]
+                ]
+            },
+            "Target_Age_Max": 65,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitGender",
+            "Target_Gender": "Female",
+            "Target_Disease_State": "HIV_Negative",
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_FSW_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2025,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear",
+        "END": "PrEP INTERVENTION"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION Clients of FSW",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIP",
+                            "Is_Equal_To": 1,
+                            "IP_Key_Value": "Risk:HIGH"
+                        },
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        }
+                    ]
+                ]
+            },
+            "Target_Age_Max": 65,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitGender",
+            "Target_Gender": "Male",
+            "Target_Disease_State": "HIV_Negative",
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_FSW_Clients": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2025,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear",
+        "END": "PrEP INTERVENTION"
+    },
+    {
+        "BEGIN": "PrEP INTERVENTION Men 2p partners",
+        "Event_Coordinator_Config": {
+            "End_Year": 2099,
+            "Intervention_Config": {
+                "Cost_To_Consumer": 1.0,
+                "Intervention_Name": "PrEP",
+                "New_Property_Value": "OnDrug:YES",
+                "Vaccine_Take": 1,
+                "Vaccine_Type": "AcquisitionBlocking",
+                "Waning_Config": {
+                    "Durability_Map": {
+                        "Times": [
+                            0,
+                            180,
+                            181
+                        ],
+                        "Values": [
+                            1,
+                            1,
+                            1
+                        ]
+                    },
+                    "Expire_At_Durability_Map_End": 1,
+                    "Initial_Effect": 0.95,
+                    "Initial_Effect_Source": "Partners OCP Study, efficacy for OCP",
+                    "class": "WaningEffectMapLinear"
+                },
+                "Waning_Config__KP_DPP_Waning": "<-- MARKER",
+                "class": "ControlledVaccine",
+                "Distributed_Event_Trigger": "Received_PrEP",
+                "Expired_Event_Trigger": ""
+            },
+            "Target_Age_Max": 50,
+            "Target_Age_Min": 15,
+            "Target_Demographic": "ExplicitAgeRangesAndGender",
+            "Target_Disease_State": "HIV_Negative",
+            "Target_Gender": "Male",
+            "Targeting_Config": {
+                "class": "TargetingLogic",
+                "Logic": [
+                    [
+                        {
+                            "class": "HasIntervention",
+                            "Is_Equal_To": 0,
+                            "Intervention_Name": "Oral_PrEP"
+                        },
+                        {
+                            "class": "HasMoreOrLessThanNumPartners",
+                            "Is_Equal_To": 1,
+                            "Of_Relationship_Type": "NA",
+                            "Num_Partners": 1,
+                            "More_Or_Less": "MORE"
+                        }
+                    ]
+                ]
+            },
+            "Time_Value_Map": {
+                "Times": [
+                    2026,
+                    2029,
+                    2035,
+                    2036
+                ],
+                "Values": [
+                    0.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "Values__KP_PrEP_MEN_Mult_Partners_OnOff": "<-- MARKER"
+            },
+            "Update_Period": 7.01923076923,
+            "class": "ReferenceTrackingEventCoordinatorHIV"
+        },
+        "Event_Coordinator_Config__KP_DPP_Event": "<-- MARKER",
+        "Event_Name": "DPP Reference Tracking",
+        "Nodeset_Config": {
+            "class": "NodeSetAll"
+        },
+        "Start_Year": 2025,
+        "Start_Year__KP_DPP_Start_Year": "<-- MARKER",
+        "class": "CampaignEventByYear",
+        "END": "LA PrEP"
+    },
+
 
         {
             "Event_Coordinator_Config": {

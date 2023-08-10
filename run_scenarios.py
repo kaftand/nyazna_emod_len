@@ -207,7 +207,8 @@ def analyze_experiments(experiment_managers, output_path, suite_id, download_fil
     am.add_analyzer(DownloadAnalyzerTPI(filenames=download_filenames,
                                         output_path=output_path,
                                         TPI_tag=TPI_TAG,
-                                        REP_tag=REP_TAG))
+                                        REP_tag=REP_TAG,
+                                        force=True))
     print(am.analyzers)
     print(am.simulations)
     am.analyze()
